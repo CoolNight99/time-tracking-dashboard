@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    background-color: hsl(226, 43%, 10%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Rubik";
+    padding: 30px;
+}
+
+div {
+    border-radius: 10px;
+}
+
+/* grid and grid items */
+.grid-container {
+    display: grid;
+    gap: 60px 30px;
+    grid-template-columns: repeat(4, 250px);
+    grid-template-rows: repeat(2, 200px);
+}
+
+.grid-item {
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 10px;
+}
+
+/* classes for report card */
+.icon-jeremy {
+    width: 70px;
+    border: 3px solid white;
+    border-radius: 35px;
+}
+
+.report {
+    grid-row: span 2;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.report-name {
+    background-color: hsl(246, 80%, 60%);
+    padding: 30px;
+    height: 500px;
+}
+
+.report-for {
+    color: hsl(235, 45%, 61%);
+    font-weight: 500;
+}
+
+.username, .current-hours {
+    font-weight: 300;
+}
+
+.username {
+    color: hsl(236, 100%, 87%);
+    margin-top: 5px;
+}
+
+.current-hours {
+    color: white;
+}
+
+.time-range {
+    color: hsl(236, 100%, 87%);
+    font-weight: 300;
+    cursor: pointer;
+    padding-left: 30px;
+}
+
+/* other cards */
+.card {
+    position: relative;
+}
+
+.card-content {
+    padding: 10px 20px;
+    z-index: 2;
+    position: relative;
+    overflow: hidden;
+}
+
+.icon-header {
+    position: absolute;
+    z-index: -1;
+    top: -40px;
+    height: 70px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    width: 250px;
+    padding: 0;
+}
+
+.card-icon {
+    width: 60px;
+    padding-right: 10px;
+}
+
+.card-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: hsl(236, 100%, 87%);
+}
+
+.current-hours {
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.previous-hours {
+    margin-top: 5px;
+    color: hsl(236, 100%, 87%);
+}
+
+/* icon heading colors */
+.work {
+    background-color: hsl(15, 100%, 70%);
+}
+
+.play {
+    background-color: hsl(195, 74%, 62%);
+}
+
+.study {
+    background-color: hsl(348, 100%, 68%);
+}
+
+.exercise {
+    background-color: hsl(145, 58%, 55%);
+}
+
+.social {
+    background-color: hsl(264, 64%, 52%);
+}
+
+.self-care {
+    background-color: hsl(43, 84%, 65%);
+}
+
+/* attribution */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+    color: white;
+}
+
+@media (max-width: 800px) {
+    body {
+        margin: 0;
+    }
+
+    .grid-container {
+        margin-top: 50px;
+        row-gap: 100px;
+        grid-template-columns: 400px;
+        grid-template-rows: auto;
+        height: 100vh;
+    }
+
+    .grid-item {
+        width: 400px;
+    }
+
+    .report {
+        grid-row: span 2;
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+    }
+
+    .report-name {
+        background-color: hsl(246, 80%, 60%);
+        padding: 10px 30px;
+        height: 150px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .report-details {
+        padding: 10px;
+        line-height: 30px;
+    }
+
+    .time-range-picker {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-right: 20px;
+    }
+
+    .card {
+        height: 170px;
+    }
+
+    .card-content {
+        padding: 10px 20px;
+        z-index: 2;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .icon-header {
+        width: 400px;
+    }
+    
+    .hours {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

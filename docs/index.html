@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+</head>
+<body>
+  <main>
+    <div class="grid-container">
+      <div class="grid-item report">
+        <div class="report-name">
+          <img class="icon-jeremy" src="./images/image-jeremy.png">
+          <div class="report-details">
+            <p class="report-for">Report for</p>
+            <h1 class="username">Jeremy Robson</h1>
+          </div>
+        </div>
+        <div class="time-range-picker">
+          <p class="time-range daily">Daily</p>
+          <p class="time-range weekly">Weekly</p>
+          <p class="time-range monthly">Monthly</p>
+        </div>
+      </div>
+      <div class="grid-item card">
+        <div class="icon-header work">
+          <img class="card-icon" src="./images/icon-work.svg">
+        </div>
+        <div class="card-content">
+          <div class="card-heading">
+            <p class="card-title">Work</p>
+            <img class="icon-ellipsis" src="./images/icon-ellipsis.svg">
+          </div>
+          <div class="hours">
+            <h1 class="current-hours current-hours-work">5hrs</h1>
+            <p class="previous-hours"><span class="previous-time-range">Yesterday</span> - <span class="previous-hours-work">7hrs</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item card">
+        <div class="icon-header play">
+          <img class="card-icon" src="./images/icon-play.svg">
+        </div>
+        <div class="card-content">
+          <div class="card-heading">
+            <p class="card-title">Play</p>
+            <img class="icon-ellipsis" src="./images/icon-ellipsis.svg">
+          </div>
+          <div class="hours">
+            <h1 class="current-hours current-hours-play">1hr</h1>
+            <p class="previous-hours"><span class="previous-time-range">Yesterday</span> - <span class="previous-hours-play">2hrs</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item card">
+        <div class="icon-header study">
+          <img class="card-icon" src="./images/icon-study.svg">
+        </div>
+        <div class="card-content">
+          <div class="card-heading">
+            <p class="card-title">Study</p>
+            <img class="icon-ellipsis" src="./images/icon-ellipsis.svg">
+          </div>
+          <div class="hours">
+            <h1 class="current-hours current-hours-study">0hrs</h1>
+            <p class="previous-hours"><span class="previous-time-range">Yesterday</span> - <span class="previous-hours-study">1hr</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item card">
+        <div class="icon-header exercise">
+          <img class="card-icon" src="./images/icon-exercise.svg">
+        </div>
+        <div class="card-content">
+          <div class="card-heading">
+            <p class="card-title">Exercise</p>
+            <img class="icon-ellipsis" src="./images/icon-ellipsis.svg">
+          </div>
+          <div class="hours">
+            <h1 class="current-hours current-hours-exercise">1hr</h1>
+            <p class="previous-hours"><span class="previous-time-range">Yesterday</span> - <span class="previous-hours-exercise">1hr</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item card">
+        <div class="icon-header social">
+          <img class="card-icon" src="./images/icon-social.svg">
+        </div>
+        <div class="card-content">
+          <div class="card-heading">
+            <p class="card-title">Social</p>
+            <img class="icon-ellipsis" src="./images/icon-ellipsis.svg">
+          </div>
+          <div class="hours">
+            <h1 class="current-hours current-hours-social">1hr</h1>
+            <p class="previous-hours"><span class="previous-time-range">Yesterday</span> - <span class="previous-hours-social">3hrs</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item card">
+        <div class="icon-header self-care">
+          <img class="card-icon" src="./images/icon-self-care.svg">
+        </div>
+        <div class="card-content">
+          <div class="card-heading">
+            <p class="card-title">Self Care</p>
+            <img class="icon-ellipsis" src="./images/icon-ellipsis.svg">
+          </div>
+          <div class="hours">
+            <h1 class="current-hours current-hours-self-care">0hrs</h1>
+            <p class="previous-hours"><span class="previous-time-range">Yesterday</span> - <span style="previous-hours-self-care">1hr</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="attribution">
+      <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
+      <p>Coded by <a href="#">CoolNight99</a>.</p>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
